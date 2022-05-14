@@ -1,1 +1,19 @@
-PFTRANSFORMER
+PFtransformer
+
+best pth download:
+link:https://pan.baidu.com/s/1tqGEchc7S5M7mIQZbItrTQ 
+password:ZtCV
+
+
+Create a data folder under the root directory
+data
+ --Occluded-Duke
+ 
+ train:
+ python train.py --config_file configs/OCC_Duke/vit_transreid_stride.yml MODEL.DEVICE_ID ("0")
+ 
+ test:
+ python test.py --config_file configs/OCC_Duke/vit_transreid_stride.yml MODEL.DEVICE_ID ("0") TEST.WEIGHT "r169.8map60.8/pth_name.pth"
+ 
+ 
+ Baseline is referenced from transreid
